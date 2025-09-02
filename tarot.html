@@ -13,17 +13,21 @@
             <div class="nav-left">
                 <a class="logo" href="index.html">
                     <img src="icon.png" alt="IT Space Tarot" width="24" height="24" />
-                    <span class="logo-text">IT Space Tarot</span>
+                    <span class="logo-text">IT Space</span>
                 </a>
             </div>
             <div class="nav-right">
                 <a href="tarot.html" class="nav-link active">IT Tarot</a>
-                <button id="resetButton" class="reset-button">Сбросить</button>
             </div>
         </nav>
     </header>
 
     <main class="tarot-content">
+        <!-- Кнопка сброса -->
+        <div class="reset-section">
+            <button id="resetButton" class="reset-button">Сбросить</button>
+        </div>
+        
         <!-- Трехкарточный расклад -->
         <section class="three-card-spread">
             <h2>Расклад трёх карт</h2>
@@ -46,10 +50,9 @@
         <!-- Колода карт -->
         <section class="tarot-deck">
             <div class="deck-header">
-                <h3>Колода Таро</h3>
                 <div class="deck-selection">
                     <span id="majorArcanaLabel" class="deck-label active">Верхний Аркан</span>
-                    <span id="minorArcanaLabel" class="deck-label">Нижний Аркан</span>
+                    <span id="minorArcanaLabel" class="deck-label">Младший Аркан</span>
                 </div>
             </div>
             <div class="deck-grid" id="deckGrid">

@@ -36,6 +36,7 @@ nav {
     gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .logo-text {
@@ -126,6 +127,12 @@ main {
 /* Страница Таро */
 .tarot-content {
     padding: 2rem 0;
+}
+
+/* Секция с кнопкой сброса */
+.reset-section {
+    text-align: right;
+    margin-bottom: 2rem;
 }
 
 /* Трехкарточный расклад */
@@ -219,11 +226,12 @@ main {
     border-radius: 6px;
     font-size: 0.9rem;
     transition: color 0.3s ease;
+    display: none;
 }
 
 .deck-label.active {
-    color: #60A5FA;
     font-weight: 500;
+    display: block;
 }
 
 /* Сетка карт */

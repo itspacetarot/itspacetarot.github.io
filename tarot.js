@@ -5,7 +5,7 @@ const tarotDeck = {
     "major_arcana": [
         {
             "type": "Старший Аркан",
-            "name": "Стажер (The Intern)",
+            "name": "The Intern (Стажер)",
             "number": 0,
             "img": "images/major/0.jpg",
             "interpretation": {
@@ -15,7 +15,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Фулстек-разработчик (The Fullstack Dev)",
+            "name": "The Fullstack Dev (Фулстек-разработчик)",
             "number": 1,
             "img": "images/major/1.jpg",
             "interpretation": {
@@ -25,7 +25,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Оракул / База Данных (The Oracle)",
+            "name": "The Oracle (Оракул / База Данных)",
             "number": 2,
             "img": "images/major/2.jpg",
             "interpretation": {
@@ -35,7 +35,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Владелец продукта (The Product Owner)",
+            "name": "The Product Owner (Владелец продукта)",
             "number": 3,
             "img": "images/major/3.jpg",
             "interpretation": {
@@ -45,7 +45,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Технический директор (The CTO)",
+            "name": "The CTO (Технический директор)",
             "number": 4,
             "img": "images/major/4.jpg",
             "interpretation": {
@@ -55,7 +55,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Тимлид (The Tech Lead)",
+            "name": "The Tech Lead (Тимлид)",
             "number": 5,
             "img": "images/major/5.jpg",
             "interpretation": {
@@ -65,7 +65,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Конфликт слияния (The Merge Conflict)",
+            "name": "The Merge Conflict (Конфликт слияния)",
             "number": 6,
             "img": "images/major/6.jpg",
             "interpretation": {
@@ -75,7 +75,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Релиз (The Release)",
+            "name": "The Release (Релиз)",
             "number": 7,
             "img": "images/major/7.jpg",
             "interpretation": {
@@ -85,7 +85,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Рефакторинг (The Refactoring)",
+            "name": "The Refactoring (Рефакторинг)",
             "number": 8,
             "img": "images/major/8.jpg",
             "interpretation": {
@@ -95,7 +95,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Дебаггер (The Debugger)",
+            "name": "The Debugger (Дебаггер)",
             "number": 9,
             "img": "images/major/9.jpg",
             "interpretation": {
@@ -105,7 +105,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Деплой (The Deploy)",
+            "name": "The Deploy (Деплой)",
             "number": 10,
             "img": "images/major/10.jpg",
             "interpretation": {
@@ -115,7 +115,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Код-ревью (The Code Review)",
+            "name": "The Code Review (Код-ревью)",
             "number": 11,
             "img": "images/major/11.jpg",
             "interpretation": {
@@ -125,7 +125,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Выгорание (The Burnout)",
+            "name": "The Burnout (Выгорание)",
             "number": 12,
             "img": "images/major/12.jpg",
             "interpretation": {
@@ -135,7 +135,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Конец поддержки (The End of Support)",
+            "name": "The End of Support (Конец поддержки)",
             "number": 13,
             "img": "images/major/13.jpg",
             "interpretation": {
@@ -145,7 +145,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Девопс (The DevOps)",
+            "name": "The DevOps (Девопс)",
             "number": 14,
             "img": "images/major/14.jpg",
             "interpretation": {
@@ -155,7 +155,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Легаси-код (The Legacy Code)",
+            "name": "The Legacy Code (Легаси-код)",
             "number": 15,
             "img": "images/major/15.jpg",
             "interpretation": {
@@ -165,7 +165,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Инцидент в проде (The Production Incident)",
+            "name": "The Production Incident (Инцидент в проде)",
             "number": 16,
             "img": "images/major/16.jpg",
             "interpretation": {
@@ -175,7 +175,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Опенсорс (The Open Source)",
+            "name": "The Open Source (Опенсорс)",
             "number": 17,
             "img": "images/major/17.jpg",
             "interpretation": {
@@ -185,7 +185,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Тестировщик (The QA Tester)",
+            "name": "The QA Tester (Тестировщик)",
             "number": 18,
             "img": "images/major/18.jpg",
             "interpretation": {
@@ -195,7 +195,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Успешный запуск (The Successful Launch)",
+            "name": "The Successful Launch (Успешный запуск)",
             "number": 19,
             "img": "images/major/19.jpg",
             "interpretation": {
@@ -205,7 +205,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Стендап (The Stand-up)",
+            "name": "The Stand-up (Стендап)",
             "number": 20,
             "img": "images/major/20.jpg",
             "interpretation": {
@@ -215,7 +215,7 @@ const tarotDeck = {
         },
         {
             "type": "Старший Аркан",
-            "name": "Повышение (The Promotion)",
+            "name": "The Promotion (Повышение)",
             "number": 21,
             "img": "images/major/21.jpg",
             "interpretation": {

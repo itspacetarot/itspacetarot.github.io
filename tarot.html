@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Tarot - Гадание на IT картах</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a class="logo" href="index.html">
+                    <img src="icon.png" alt="IT Space Tarot" width="24" height="24" />
+                    <span class="logo-text">IT Space Tarot</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="tarot.html" class="nav-link active">IT Tarot</a>
+                <button id="resetButton" class="reset-button">Сбросить</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tarot-content">
+        <!-- Трехкарточный расклад -->
+        <section class="three-card-spread">
+            <h2>Расклад трёх карт</h2>
+            <div class="spread-cards">
+                <div class="spread-card" id="pastCard">
+                    <div class="card-placeholder" id="card1"></div>
+                    <div class="orientation-text" id="orient1"></div>
+                </div>
+                <div class="spread-card" id="presentCard">
+                    <div class="card-placeholder" id="card2"></div>
+                    <div class="orientation-text" id="orient2"></div>
+                </div>
+                <div class="spread-card" id="futureCard">
+                    <div class="card-placeholder" id="card3"></div>
+                    <div class="orientation-text" id="orient3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Колода карт -->
+        <section class="tarot-deck">
+            <div class="deck-header">
+                <h3>Колода Таро</h3>
+                <div class="deck-selection">
+                    <span id="majorArcanaLabel" class="deck-label active">Верхний Аркан</span>
+                    <span id="minorArcanaLabel" class="deck-label">Нижний Аркан</span>
+                </div>
+            </div>
+            <div class="deck-grid" id="deckGrid">
+                <!-- Карты будут добавлены динамически -->
+            </div>
+        </section>
+
+        <!-- Результаты расклада -->
+        <section class="results" id="resultsSection" style="display:none;">
+            <h3>Результаты расклада</h3>
+            <div id="resultsList"></div>
+        </section>
+
+        <!-- Модальное окно для интерпретации -->
+        <div id="interpretationModal" class="modal">
+            <div class="modal-content">
+                <h3 id="modalTitle"></h3>
+                <div class="card-image-container">
+                    <div id="modalCardImage" class="card-image">
+                        <div class="card-content">
+                            <div class="card-name"></div>
+                            <div class="card-type"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interpretation">
+                    <p id="modalInterpretation"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">
+                <span class="rocket">🚀</span>
+                © 2025 IT Space Tarot. Все права защищены.
+            </p>
+            <p class="tagline">Исследуйте космос через древнюю мудрость карт Таро</p>
+        </div>
+    </footer>
+
+    <script src="tarot.js"></script>
+</body>
+</html>

@@ -10,6 +10,9 @@ body {
     background-color: #1A1D24;
     color: #ffffff;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Заголовок и навигация */
@@ -85,6 +88,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+    flex: 1;
 }
 
 /* Главная страница */
@@ -129,11 +133,6 @@ main {
     padding: 2rem 0;
 }
 
-/* Секция с кнопкой сброса */
-.reset-section {
-    text-align: right;
-    margin-bottom: 2rem;
-}
 
 /* Трехкарточный расклад */
 .three-card-spread {
@@ -150,8 +149,39 @@ main {
 .spread-cards {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
+}
+
+/* Изменяем порядок карт: presentCard, pastCard, futureCard */
+.spread-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+#presentCard {
+    order: 1;
+}
+
+#pastCard {
+    order: 2;
+}
+
+#futureCard {
+    order: 3;
+}
+
+/* Увеличиваем pastCard на 25% */
+#pastCard .card-placeholder {
+    width: 150px; /* 120px * 1.25 */
+    height: 257.5px; /* 206px * 1.25 */
+}
+
+/* Увеличиваем изображение карты внутри pastCard на 25% */
+#pastCard .card-image {
+    width: 150px; /* 120px * 1.25 */
+    height: 257.5px; /* 206px * 1.25 */
 }
 
 .spread-card {
@@ -201,6 +231,8 @@ main {
 /* Колода карт */
 .tarot-deck {
     margin-top: 3rem;
+    width: 100%;
+    background-color: #1A1D24;
 }
 
 .deck-header {
@@ -208,6 +240,10 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
 }
 
 .deck-header h3 {
@@ -239,7 +275,9 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
-    max-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .results {
@@ -420,16 +458,32 @@ main {
     padding: 2rem;
     border-radius: 12px;
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
     border: 1px solid #4A5568;
-    aspect-ratio: 1 / 1.72;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transform: scale(0.1);
     opacity: 0;
     transition: all 0.5s ease;
+}
+
+.modal.image .modal-content {
+    max-width: 400px;
+    margin: 2% auto 0;
+    background: none;
+    border: none;
+    top: 11%;
+}
+
+.modal.interpretation {
+    background-color: transparent;
+}
+
+.modal.interpretation .modal-content {
+    max-width: 500px;
+    margin: 10px auto 2%;
+    bottom: -70%;
 }
 
 .modal-content.show {
@@ -448,12 +502,18 @@ main {
 
 .card-image-container {
     width: 100%;
-    height: 200px;
-    margin: 0;
+    height: 300px;
+    margin: 0 0 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .card-image {
@@ -468,7 +528,7 @@ main {
     color: #ffffff;
     font-size: 0.9rem;
     text-align: center;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     box-sizing: border-box;
 }
 
@@ -505,7 +565,15 @@ main {
     border-radius: 8px;
     padding: 1rem;
     background-color: #3A3F4A;
-    margin-top: 1rem;
+    margin-top: 0;
+}
+
+.modal-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .interpretation p {
@@ -521,7 +589,7 @@ footer {
     background-color: #2D313A;
     border-top: 1px solid #3A3F4A;
     padding: 2rem;
-    margin-top: 4rem;
+    margin-top: auto;
 }
 
 .footer-content {

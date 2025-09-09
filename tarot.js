@@ -7,7 +7,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Intern (Стажер)",
             "number": 0,
-            "img": "images/major/0.jpg",
+            "img": "images/major/theIntern.png",
             "interpretation": {
                 "upright": "Энтузиазм, новые технологии, готовность учиться, начало проекта 'с чистого листа'",
                 "reversed": "Неопытность, наивность, риск наделать ошибок, 'сломал прод'"
@@ -17,7 +17,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Fullstack Dev (Фулстек-разработчик)",
             "number": 1,
-            "img": "images/major/1.jpg",
+            "img": "images/major/thFullstackDev.png",
             "interpretation": {
                 "upright": "Контроль над ситуацией, использование всех инструментов, мастерство, инициатива",
                 "reversed": "Хаки, костыли, неэффективное использование ресурсов, обман начальства"
@@ -27,7 +27,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Oracle (Оракул / База Данных)",
             "number": 2,
-            "img": "images/major/2.jpg",
+            "img": "images/major/theOracle.png",
             "interpretation": {
                 "upright": "Глубокие знания, интуиция (чуйка на баги), доступ к скрытой информации, мудрость документации",
                 "reversed": "Скрытые баги, непонимание ТЗ, утечка данных, зашифрованные логи"
@@ -37,7 +37,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Product Owner (Владелец продукта)",
             "number": 3,
-            "img": "images/major/3.jpg",
+            "img": "images/major/thePO.png",
             "interpretation": {
                 "upright": "Изобилие фич, творческий подход, рост проекта, комфорт и ресурсы",
                 "reversed": "Задачи без KPI, крейзи-идеи, раздутый бюджет, 'хочушечки'"
@@ -47,7 +47,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The CTO (Технический директор)",
             "number": 4,
-            "img": "images/major/4.jpg",
+            "img": "images/major/theCTO.png",
             "interpretation": {
                 "upright": "Структура, порядок, контроль, архитектура, авторитет, стратегия",
                 "reversed": "Микроменеджмент, бюрократия, техностек, который никому не нравится"
@@ -57,7 +57,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Tech Lead (Тимлид)",
             "number": 5,
-            "img": "images/major/5.jpg",
+            "img": "images/major/theTechLead.png",
             "interpretation": {
                 "upright": "Менторство, код-ревью, передача знаний, соблюдение best practices, традиции команды",
                 "reversed": "Догматизм, 'мы всегда так делали', навязывание своего стиля кода"
@@ -67,7 +67,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Merge Conflict (Конфликт слияния)",
             "number": 6,
-            "img": "images/major/6.jpg",
+            "img": "images/major/theMerge Conflict.png",
             "interpretation": {
                 "upright": "Выбор (какую ветку оставить?), согласие, интеграция",
                 "reversed": "Неразрешимый конфликт, потерянный код, необходимость все переделывать"
@@ -77,7 +77,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Release (Релиз)",
             "number": 7,
-            "img": "images/major/7.jpg",
+            "img": "images/major/theRelease.png",
             "interpretation": {
                 "upright": "Движение вперед, победа, вывод продукта в прод, контроль над двумя 'конями' (dev и ops)",
                 "reversed": "Задержка релиза, откат (rollback), все падает в самый последний момент"
@@ -87,7 +87,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Refactoring (Рефакторинг)",
             "number": 8,
-            "img": "images/major/8.jpg",
+            "img": "images/major/theRefactoring.png",
             "interpretation": {
                 "upright": "Укрощение легаси-кода, мягкая сила, терпение, уверенность в своих силах",
                 "reversed": "Страх сломать, технический долг, который победил вас"
@@ -97,7 +97,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Debugger (Дебаггер)",
             "number": 9,
-            "img": "images/major/9.jpg",
+            "img": "images/major/theDebugger.png",
             "interpretation": {
                 "upright": "Глубокий анализ, поиск корня проблемы, уход в себя (в код), саморефлексия",
                 "reversed": "Бесконечный поиск бага, который не существует, изоляция, выгорание"
@@ -107,7 +107,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Deploy (Деплой)",
             "number": 10,
-            "img": "images/major/10.jpg",
+            "img": "images/major/theDeploy.png",
             "interpretation": {
                 "upright": "Поворот судьбы, удача, кармический цикл (на продакшене все работает иначе)",
                 "reversed": "Неудачный деплой, падающие сервера, 'работало на моей машине'"
@@ -117,7 +117,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Code Review (Код-ревью)",
             "number": 11,
-            "img": "images/major/11.jpg",
+            "img": "images/major/theCodeReview.png",
             "interpretation": {
                 "upright": "Баланс, справедливость, карма, accountability, принятие взвешенных решений",
                 "reversed": "Придирки из-за пробелов вместо табов, необъективность, хейт"
@@ -127,7 +127,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Burnout (Выгорание)",
             "number": 12,
-            "img": "images/major/12.jpg",
+            "img": "images/major/theBurnout.png",
             "interpretation": {
                 "upright": "Взгляд с новой перспективы, пауза, необходимость отступить",
                 "reversed": "Застой, апатия, ощущение бессмысленности, 'стояние в очереди на отпуск'"
@@ -137,7 +137,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The End of Support (Конец поддержки)",
             "number": 13,
-            "img": "images/major/13.jpg",
+            "img": "images/major/theEndOfSupport.png",
             "interpretation": {
                 "upright": "Конец эпохи, трансформация, обязательные изменения (миграция, апгрейд)",
                 "reversed": "Сопротивление изменениям, мертвый код, который все боятся трогать"
@@ -147,7 +147,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The DevOps (Девопс)",
             "number": 14,
-            "img": "images/major/14.jpg",
+            "img": "images/major/theDevOps.png",
             "interpretation": {
                 "upright": "Гармония между разработкой и эксплуатацией, балансировка нагрузки, эффективность",
                 "reversed": "Сложная и хрупкая конфигурация, 'это не у меня падает, это у тебя'"
@@ -157,7 +157,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Legacy Code (Легаси-код)",
             "number": 15,
-            "img": "images/major/15.jpg",
+            "img": "images/major/theLegacyCode.png",
             "interpretation": {
                 "upright": "Оковы, зависимости, токсичные отношения с кодом, вредные привычки",
                 "reversed": "Освобождение от пут, рискованный рефакторинг, полный переписывание"
@@ -167,7 +167,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Production Incident (Инцидент в проде)",
             "number": 16,
-            "img": "images/major/16.jpg",
+            "img": "images/major/theProductionIncident.png",
             "interpretation": {
                 "upright": "Внезапный крах, прозрение, разрушение иллюзий",
                 "reversed": "Хаос, паника, поиск виноватых, постмортем без выводов"
@@ -177,7 +177,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Open Source (Опенсорс)",
             "number": 17,
-            "img": "images/major/17.jpg",
+            "img": "images/major/theOpenSource.png",
             "interpretation": {
                 "upright": "Надежда, вдохновение, щедрость сообщества, свет в конце туннеля",
                 "reversed": "Заброшенный репозиторий, уязвимости, токсичный мейнтейнер"
@@ -187,7 +187,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The QA Tester (Тестировщик)",
             "number": 18,
-            "img": "images/major/18.jpg",
+            "img": "images/major/theQATester.png",
             "interpretation": {
                 "upright": "Иллюзии, страхи (а что, если...?), поиск скрытых багов, тесты на граничных условиях",
                 "reversed": "Ложные срабатывания, пропущенный критический баг, паранойя"
@@ -197,7 +197,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Successful Launch (Успешный запуск)",
             "number": 19,
-            "img": "images/major/19.jpg",
+            "img": "images/major/theSuccessfulLaunch.png",
             "interpretation": {
                 "upright": "Успех, радость, позитив, ясность, проект работает и приносит деньги",
                 "reversed": "Слепой оптимизм, недооценка проблем, 'медовый месяц' перед первым багом"
@@ -207,7 +207,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Stand-up (Стендап)",
             "number": 20,
-            "img": "images/major/20.jpg",
+            "img": "images/major/theStandUp.png",
             "interpretation": {
                 "upright": "Подведение итогов, оценка результатов, призыв к действию, ясность задач",
                 "reversed": "Ежедневная рутина, бесполезные встречи, оправдания"
@@ -217,7 +217,7 @@ const tarotDeck = {
             "type": "Старший Аркан",
             "name": "The Promotion (Повышение)",
             "number": 21,
-            "img": "images/major/21.jpg",
+            "img": "images/major/thePromotion.png",
             "interpretation": {
                 "upright": "Завершение большого цикла, успех, гармония, интеграция, чувство достижения",
                 "reversed": "Застой в карьере, 'повышение' без увеличения з/п, синдром самозванца"
@@ -233,7 +233,7 @@ const tarotDeck = {
                 {
                     "rank": "Туз",
                     "name": "Туз Кофе",
-                    "img": "images/minor/coffee/ace.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Блестящая идея, прилив мотивации, начало нового проекта",
                         "reversed": "Отсутствие вдохновения, творческий кризис, прокрастинация"
@@ -242,7 +242,7 @@ const tarotDeck = {
                 {
                     "rank": "Двойка",
                     "name": "Двойка Кофе",
-                    "img": "images/minor/coffee/2.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Планирование проекта, распределение задач, первые шаги",
                         "reversed": "Неясные цели, отсутствие плана, хаотичное начало"
@@ -251,7 +251,7 @@ const tarotDeck = {
                 {
                     "rank": "Тройка",
                     "name": "Тройка Кофе",
-                    "img": "images/minor/coffee/3.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Быстрое развитие, первые успехи, рост компетенций",
                         "reversed": "Задержки в разработке, технические трудности, медленный прогресс"
@@ -260,7 +260,7 @@ const tarotDeck = {
                 {
                     "rank": "Четверка",
                     "name": "Четверка Кофе",
-                    "img": "images/minor/coffee/4.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Стабильность проекта, отлаженные процессы, предсказуемость",
                         "reversed": "Застой, рутина, отсутствие инноваций, скука"
@@ -269,7 +269,7 @@ const tarotDeck = {
                 {
                     "rank": "Пятерка",
                     "name": "Пятерка Кофе",
-                    "img": "images/minor/coffee/5.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Конкуренция, сравнение с другими проектами, здоровое соперничество",
                         "reversed": "Конфликты в команде, нечестная конкуренция, саботаж"
@@ -278,7 +278,7 @@ const tarotDeck = {
                 {
                     "rank": "Шестерка",
                     "name": "Шестерка Кофе",
-                    "img": "images/minor/coffee/6.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Победа, успешное завершение этапа, признание заслуг",
                         "reversed": "Задержка успеха, недооцененность, отсутствие признания"
@@ -287,7 +287,7 @@ const tarotDeck = {
                 {
                     "rank": "Семерка",
                     "name": "Семерка Кофе",
-                    "img": "images/minor/coffee/7.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Защита своего проекта, отстаивание идей, уверенность",
                         "reversed": "Оборонительная позиция, неспособность принять критику, упрямство"
@@ -296,7 +296,7 @@ const tarotDeck = {
                 {
                     "rank": "Восьмерка",
                     "name": "Восьмерка Кофе",
-                    "img": "images/minor/coffee/8.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Быстрое движение, Agile-подход, оперативные изменения",
                         "reversed": "Спешка, необдуманные решения, технический долг"
@@ -305,7 +305,7 @@ const tarotDeck = {
                 {
                     "rank": "Девятка",
                     "name": "Девятка Кофе",
-                    "img": "images/minor/coffee/9.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Сильная мотивация, энергия для финального рывка, устойчивость",
                         "reversed": "Выгорание, истощение, нехватка сил на завершение"
@@ -314,7 +314,7 @@ const tarotDeck = {
                 {
                     "rank": "Десятка",
                     "name": "Десятка Кофе",
-                    "img": "images/minor/coffee/10.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Успешный запуск, завершение проекта, признание",
                         "reversed": "Провальный релиз, перегруженность, чрезмерная ответственность"
@@ -323,7 +323,7 @@ const tarotDeck = {
                 {
                     "rank": "Паж",
                     "name": "Паж Кофе",
-                    "img": "images/minor/coffee/page.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Любознательный стажер, новые идеи, энтузиазм",
                         "reversed": "Неопытность, наивные предложения, необходимость менторства"
@@ -332,7 +332,7 @@ const tarotDeck = {
                 {
                     "rank": "Рыцарь",
                     "name": "Рыцарь Кофе",
-                    "img": "images/minor/coffee/knight.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Активный разработчик, быстрые действия, амбиции",
                         "reversed": "Нетерпение, безрассудство, необдуманные риски"
@@ -341,7 +341,7 @@ const tarotDeck = {
                 {
                     "rank": "Королева",
                     "name": "Королева Кофе",
-                    "img": "images/minor/coffee/queen.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Уверенный лидер, вдохновляющий других, компетентность",
                         "reversed": "Властность, подавление инициативы, доминирование"
@@ -350,7 +350,7 @@ const tarotDeck = {
                 {
                     "rank": "Король",
                     "name": "Король Кофе",
-                    "img": "images/minor/coffee/king.jpg",
+                    "img": "images/minor/coffee/coffee.png",
                     "interpretation": {
                         "upright": "Опытный архитектор, видение проекта, стратегическое мышление",
                         "reversed": "Жесткий контроль, негибкость, авторитарный стиль"
@@ -366,7 +366,7 @@ const tarotDeck = {
                 {
                     "rank": "Туз",
                     "name": "Туз Кода",
-                    "img": "images/minor/code/ace.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Озарение, ясное решение сложной проблемы, прорывная идея",
                         "reversed": "Путаница в коде, сложная логика, непонятные решения"
@@ -375,7 +375,7 @@ const tarotDeck = {
                 {
                     "rank": "Двойка",
                     "name": "Двойка Кода",
-                    "img": "images/minor/code/2.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Взвешенное техническое решение, выбор между подходами",
                         "reversed": "Неопределенность, трудный выбор, тупиковая архитектура"
@@ -384,7 +384,7 @@ const tarotDeck = {
                 {
                     "rank": "Тройка",
                     "name": "Тройка Кода",
-                    "img": "images/minor/code/3.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Успешное решение проблемы, работающий патч",
                         "reversed": "Болезненное решение, необходимость пожертвовать частью функционала"
@@ -393,7 +393,7 @@ const tarotDeck = {
                 {
                     "rank": "Четверка",
                     "name": "Четверка Кода",
-                    "img": "images/minor/code/4.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Необходимость отдохнуть от кода, перерыв для перезагрузки",
                         "reversed": "Вынужденный простой, блокировка другими задачами"
@@ -402,7 +402,7 @@ const tarotDeck = {
                 {
                     "rank": "Пятерка",
                     "name": "Пятерка Кода",
-                    "img": "images/minor/code/5.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Поиск уязвимостей, обнаружение чужих ошибок",
                         "reversed": "Нечестные методы, кража кода, плагиат"
@@ -411,7 +411,7 @@ const tarotDeck = {
                 {
                     "rank": "Шестерка",
                     "name": "Шестерка Кода",
-                    "img": "images/minor/code/6.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Успешный переход на новую технологию, миграция данных",
                         "reversed": "Застревание в старом решении, сопротивление изменениям"
@@ -420,7 +420,7 @@ const tarotDeck = {
                 {
                     "rank": "Семерка",
                     "name": "Семерка Кода",
-                    "img": "images/minor/code/7.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Креативное решение, нестандартный подход, хак",
                         "reversed": "Обход правил, неэтичные методы, небезопасные решения"
@@ -429,7 +429,7 @@ const tarotDeck = {
                 {
                     "rank": "Восьмерка",
                     "name": "Восьмерка Кода",
-                    "img": "images/minor/code/8.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Сложный рефакторинг, ограничения старой системы",
                         "reversed": "Ощущение заточения в легаси, невозможность изменений"
@@ -438,7 +438,7 @@ const tarotDeck = {
                 {
                     "rank": "Девятка",
                     "name": "Девятка Кода",
-                    "img": "images/minor/code/9.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Бессонная ночь из-за сложного бага, тревога, паранойя",
                         "reversed": "Преодоление страха, решение проблемы, облегчение"
@@ -447,7 +447,7 @@ const tarotDeck = {
                 {
                     "rank": "Десятка",
                     "name": "Десятка Кода",
-                    "img": "images/minor/code/10.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Крах проекта, полный пересмотр архитектуры",
                         "reversed": "Циклические зависимости, невозможность что-либо изменить"
@@ -456,7 +456,7 @@ const tarotDeck = {
                 {
                     "rank": "Паж",
                     "name": "Паж Кода",
-                    "img": "images/minor/code/page.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Любознательный ученик, изучение новых технологий",
                         "reversed": "Поверхностные знания, непонимание основ"
@@ -465,7 +465,7 @@ const tarotDeck = {
                 {
                     "rank": "Рыцарь",
                     "name": "Рыцарь Кода",
-                    "img": "images/minor/code/knight.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Логичный аналитик, ясное мышление, рациональность",
                         "reversed": "Холодная логика, игнорирование человеческого фактора"
@@ -474,7 +474,7 @@ const tarotDeck = {
                 {
                     "rank": "Королева",
                     "name": "Королева Кода",
-                    "img": "images/minor/code/queen.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Мудрый архитектор, глубокая экспертиза, ясность мысли",
                         "reversed": "Манипуляция знаниями, интеллектуальное превосходство"
@@ -483,7 +483,7 @@ const tarotDeck = {
                 {
                     "rank": "Король",
                     "name": "Король Кода",
-                    "img": "images/minor/code/king.jpg",
+                    "img": "images/minor/code/code.png",
                     "interpretation": {
                         "upright": "Мастер алгоритмов, глубокое понимание систем",
                         "reversed": "Злоупотребление властью через знания, сложные для понимания решения"
@@ -499,7 +499,7 @@ const tarotDeck = {
                 {
                     "rank": "Туз",
                     "name": "Туз Денег",
-                    "img": "images/minor/dollars/ace.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Новый раунд инвестиций, повышение зарплаты, финансовые возможности",
                         "reversed": "Потеря финансирования, сокращение бюджета, финансовые проблемы"
@@ -508,7 +508,7 @@ const tarotDeck = {
                 {
                     "rank": "Двойка",
                     "name": "Двойка Денег",
-                    "img": "images/minor/dollars/2.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Балансировка бюджета, приоритизация затрат",
                         "reversed": "Дисбаланс в финансах, нерациональные траты"
@@ -517,7 +517,7 @@ const tarotDeck = {
                 {
                     "rank": "Тройка",
                     "name": "Тройка Денег",
-                    "img": "images/minor/dollars/3.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Успешная монетизация, рост доходов, окупаемость",
                         "reversed": "Задержки в оплате, проблемы с monetization"
@@ -526,7 +526,7 @@ const tarotDeck = {
                 {
                     "rank": "Четверка",
                     "name": "Четверка Денег",
-                    "img": "images/minor/dollars/4.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Сохранение бюджета, контроль расходов, экономия",
                         "reversed": "Жадность, нежелание платить за хороший хостинг или инструменты"
@@ -535,7 +535,7 @@ const tarotDeck = {
                 {
                     "rank": "Пятерка",
                     "name": "Пятерка Денег",
-                    "img": "images/minor/dollars/5.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Финансовые трудности, необходимость оптимизировать затраты",
                         "reversed": "Крайняя бедность проекта, отсутствие финансирования"
@@ -544,7 +544,7 @@ const tarotDeck = {
                 {
                     "rank": "Шестерка",
                     "name": "Шестерка Денег",
-                    "img": "images/minor/dollars/6.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Финансовая помощь, инвестиции, спонсорство",
                         "reversed": "Долги, невыгодные условия, зависимость от инвесторов"
@@ -553,7 +553,7 @@ const tarotDeck = {
                 {
                     "rank": "Семерка",
                     "name": "Семерка Денег",
-                    "img": "images/minor/dollars/7.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Долгосрочные инвестиции, терпение в ожидании отдачи",
                         "reversed": "Нетерпение, желание быстрой отдачи, неоправданные риски"
@@ -562,7 +562,7 @@ const tarotDeck = {
                 {
                     "rank": "Восьмерка",
                     "name": "Восьмерка Денег",
-                    "img": "images/minor/dollars/8.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Профессиональное развитие, инвестиции в обучение",
                         "reversed": "Рутинная работа ради денег, отсутствие развития"
@@ -571,7 +571,7 @@ const tarotDeck = {
                 {
                     "rank": "Девятка",
                     "name": "Девятка Денег",
-                    "img": "images/minor/dollars/9.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Финансовая стабильность, комфорт, безопасность",
                         "reversed": "Зависимость от денег, нежелание рисковать"
@@ -580,7 +580,7 @@ const tarotDeck = {
                 {
                     "rank": "Десятка",
                     "name": "Десятка Денег",
-                    "img": "images/minor/dollars/10.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Финансовый успех, богатство, наследие",
                         "reversed": "Потеря состояния, неудачные инвестиции"
@@ -589,7 +589,7 @@ const tarotDeck = {
                 {
                     "rank": "Паж",
                     "name": "Паж Денег",
-                    "img": "images/minor/dollars/page.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Изучение финансовой грамотности, новые возможности заработка",
                         "reversed": "Неразумное отношение к деньгам, транжирство"
@@ -598,7 +598,7 @@ const tarotDeck = {
                 {
                     "rank": "Рыцарь",
                     "name": "Рыцарь Денег",
-                    "img": "images/minor/dollars/knight.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Надежный инвестор, практичный подход к финансам",
                         "reversed": "Излишняя осторожность, упущенные возможности"
@@ -607,7 +607,7 @@ const tarotDeck = {
                 {
                     "rank": "Королева",
                     "name": "Королева Денег",
-                    "img": "images/minor/dollars/queen.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Финансовая мудрость, разумное управление бюджетом",
                         "reversed": "Материализм, жадность, оценка всего через деньги"
@@ -616,7 +616,7 @@ const tarotDeck = {
                 {
                     "rank": "Король",
                     "name": "Король Денег",
-                    "img": "images/minor/dollars/king.jpg",
+                    "img": "images/minor/dollars/money.png",
                     "interpretation": {
                         "upright": "Финансовая власть, успешный инвестор, богатство",
                         "reversed": "Злоупотребление финансовой властью, жадность"
@@ -632,6 +632,7 @@ const tarotDeck = {
                 {
                     "rank": "Туз",
                     "name": "Туз Пинга",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Новый крутой митап или начало плотного сотрудничества, эмоциональное удовлетворение",
                         "reversed": "Эмоциональный голод, одиночество в коллективе"
@@ -640,7 +641,7 @@ const tarotDeck = {
                 {
                     "rank": "Двойка",
                     "name": "Двойка Пинга",
-                    "img": "images/minor/ping/2.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Удачное коллективное программирование, взаимопонимание",
                         "reversed": "Разсогласованность, недопонимание, возможный конфликт"
@@ -649,7 +650,7 @@ const tarotDeck = {
                 {
                     "rank": "Тройка",
                     "name": "Тройка Пинга",
-                    "img": "images/minor/ping/3.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Успешная командная работа, празднование успеха",
                         "reversed": "Разочарование в коллегах, неоправданные ожидания"
@@ -658,7 +659,7 @@ const tarotDeck = {
                 {
                     "rank": "Четверка",
                     "name": "Четверка Пинга",
-                    "img": "images/minor/ping/4.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Необходимость перерыва в общении, эмоциональная пауза",
                         "reversed": "Изоляция, избегание коллег, эмоциональный блок"
@@ -667,7 +668,7 @@ const tarotDeck = {
                 {
                     "rank": "Пятерка",
                     "name": "Пятерка Пинга",
-                    "img": "images/minor/ping/5.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Разочарование в коллегах, несбывшиеся надежды",
                         "reversed": "Принятие ситуации, движение дальше"
@@ -676,7 +677,7 @@ const tarotDeck = {
                 {
                     "rank": "Шестерка",
                     "name": "Шестерка Пинга",
-                    "img": "images/minor/ping/6.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Ностальгия по прошлым проектам, работа с бывшими коллегами",
                         "reversed": "Застревание в прошлом, неспособность двигаться вперед"
@@ -685,7 +686,7 @@ const tarotDeck = {
                 {
                     "rank": "Семерка",
                     "name": "Семерка Пинга",
-                    "img": "images/minor/ping/7.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Соблазн сменить команду, поиск лучших условий",
                         "reversed": "Пустые мечты, нерешительность, упущенные возможности"
@@ -694,7 +695,7 @@ const tarotDeck = {
                 {
                     "rank": "Восьмерка",
                     "name": "Восьмерка Пинга",
-                    "img": "images/minor/ping/8.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Уход из проекта, эмоциональное отдаление",
                         "reversed": "Цепляние за неудачные отношения, страх перемен"
@@ -703,7 +704,7 @@ const tarotDeck = {
                 {
                     "rank": "Девятка",
                     "name": "Девятка Пинга",
-                    "img": "images/minor/ping/9.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Гармония в команде, эмоциональное удовлетворение",
                         "reversed": "Искусственная гармония, скрытые конфликты"
@@ -712,7 +713,7 @@ const tarotDeck = {
                 {
                     "rank": "Десятка",
                     "name": "Десятка Пинга",
-                    "img": "images/minor/ping/10.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Семейная атмосфера в коллективе, полное удовлетворение",
                         "reversed": "Дисфункциональная команда, эмоциональное выгорание"
@@ -721,7 +722,7 @@ const tarotDeck = {
                 {
                     "rank": "Паж",
                     "name": "Паж Пинга",
-                    "img": "images/minor/ping/page.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Эмоциональное сообщение, новые знакомства в рабочем порядке",
                         "reversed": "Неудачные шутки, недопонимание, эмоциональная незрелость"
@@ -730,7 +731,7 @@ const tarotDeck = {
                 {
                     "rank": "Рыцарь",
                     "name": "Рыцарь Пинга",
-                    "img": "images/minor/ping/knight.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Романтическое предложение о работе, эмоциональное приглашение",
                         "reversed": "Нежелательное внимание, назойливость, спам"
@@ -739,7 +740,7 @@ const tarotDeck = {
                 {
                     "rank": "Королева",
                     "name": "Королева Пинга",
-                    "img": "images/minor/ping/queen.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Эмпатичный лидер, забота о команде, эмоциональный интеллект",
                         "reversed": "Манипуляции эмоциями, эмоциональная зависимость"
@@ -748,7 +749,7 @@ const tarotDeck = {
                 {
                     "rank": "Король",
                     "name": "Король Пинга",
-                    "img": "images/minor/ping/king.jpg",
+                    "img": "images/minor/ping/ping.png",
                     "interpretation": {
                         "upright": "Мудрый руководитель, эмоциональная стабильность, дипломатия",
                         "reversed": "Злоупотребление эмоциональной властью, манипуляции"
@@ -774,7 +775,8 @@ const deckGrid = document.getElementById('deckGrid');
 const majorArcanaLabel = document.getElementById('majorArcanaLabel');
 const minorArcanaLabel = document.getElementById('minorArcanaLabel');
 const resetButton = document.getElementById('resetButton');
-const modal = document.getElementById('interpretationModal');
+const imageModal = document.getElementById('imageModal');
+const interpretationModal = document.getElementById('interpretationModal');
 
 // Инициализация игры
 function initGame() {
@@ -914,14 +916,18 @@ function createDeckGrid() {
         back.className = 'card-face back';
         const backContent = document.createElement('div');
         backContent.className = 'back-content';
-        const backTitle = document.createElement('div');
-        backTitle.className = 'back-title';
-        backTitle.textContent = card.name || card.rank || '';
-        const backType = document.createElement('div');
-        backType.className = 'back-type';
-        backType.textContent = card.type || card.suit || '';
-        backContent.appendChild(backTitle);
-        backContent.appendChild(backType);
+        
+        // Добавляем изображение карты
+        const backImage = document.createElement('img');
+        backImage.className = 'card-image';
+        backImage.src = card.img;
+        backImage.alt = card.name || card.rank || '';
+        backImage.onerror = function() {
+            // Если изображение не загрузилось, скрываем его
+            this.style.display = 'none';
+        };
+        
+        backContent.appendChild(backImage);
         back.appendChild(backContent);
 
         inner.appendChild(front);
@@ -985,7 +991,7 @@ function placeCardInSpread(card, deckIndex) {
     
     placeholder.innerHTML = `
         <div class="card-content">
-            <div class="card-name">${card.name}</div>
+            <img class="card-image" src="${card.img}" alt="${card.name}" onerror="this.style.display='none'">
         </div>
     `;
     placeholder.className = 'card-placeholder filled';
@@ -1015,10 +1021,13 @@ function flipCardAndShowModal(cardElement, card, isReversed) {
     
     // После завершения переворота показываем модалку
     setTimeout(() => {
-        modal.style.display = 'block';
+        imageModal.style.display = 'block';
+        interpretationModal.style.display = 'block';
         requestAnimationFrame(() => {
-            modal.classList.add('show');
-            modal.querySelector('.modal-content').classList.add('show');
+            imageModal.classList.add('show');
+            interpretationModal.classList.add('show');
+            imageModal.querySelector('.modal-content').classList.add('show');
+            interpretationModal.querySelector('.modal-content').classList.add('show');
             showInterpretation(card, isReversed);
         });
     }, 600);
@@ -1029,24 +1038,37 @@ function showInterpretation(card, isReversed) {
     const modalTitle = document.getElementById('modalTitle');
     const modalInterpretation = document.getElementById('modalInterpretation');
     const modalCardImage = document.getElementById('modalCardImage');
-    const cardName = modalCardImage.querySelector('.card-name');
-    const cardType = modalCardImage.querySelector('.card-type');
     
+    // Заголовок модального окна (под изображением)
     modalTitle.textContent = card.name;
     
-    // Настройка изображения карты
-    cardName.textContent = card.name;
-    cardType.textContent = card.type || card.suit || '';
+    // Добавляем или обновляем изображение карты в модальном окне
+    let cardImage = modalCardImage.querySelector('.card-image');
+    if (!cardImage) {
+        cardImage = document.createElement('img');
+        cardImage.className = 'card-image';
+        // Добавляем изображение в начало modalCardImage
+        modalCardImage.insertBefore(cardImage, modalCardImage.firstChild);
+    }
+    cardImage.src = card.img;
+    cardImage.alt = card.name;
+    cardImage.onerror = function() {
+        // Если изображение не загрузилось, скрываем его
+        this.style.display = 'none';
+    };
     
     // Применение ориентации
     if (isReversed) {
         modalCardImage.classList.add('reversed');
+        cardImage.classList.add('reversed');
     } else {
         modalCardImage.classList.remove('reversed');
+        cardImage.classList.remove('reversed');
     }
     
     const interpretation = isReversed ? card.interpretation.reversed : card.interpretation.upright;
-    modalInterpretation.textContent = interpretation;
+    const orientationLabel = isReversed ? 'Перевернутая' : 'Прямая';
+    modalInterpretation.textContent = `(${orientationLabel}): ${interpretation}`;
 }
 
 
@@ -1058,7 +1080,7 @@ function setupEventListeners() {
     
     // Закрытие модального окна при клике вне его
     window.addEventListener('click', (event) => {
-        if (event.target === modal) {
+        if (event.target === imageModal || event.target === interpretationModal) {
             closeModal();
         }
     });
@@ -1066,11 +1088,14 @@ function setupEventListeners() {
 
 // Закрытие модального окна с анимацией
 function closeModal() {
-    modal.classList.remove('show');
-    modal.querySelector('.modal-content').classList.remove('show');
+    imageModal.classList.remove('show');
+    interpretationModal.classList.remove('show');
+    imageModal.querySelector('.modal-content').classList.remove('show');
+    interpretationModal.querySelector('.modal-content').classList.remove('show');
     
     setTimeout(() => {
-        modal.style.display = 'none';
+        imageModal.style.display = 'none';
+        interpretationModal.style.display = 'none';
         
         // Выполнить отложенное действие: поставить карту и переключить колоду при необходимости
         if (gameState.pendingPlacement) {
@@ -1108,6 +1133,7 @@ function renderResults() {
     cards.slice(0, 3).forEach((entry) => {
         const item = document.createElement('div');
         item.className = 'result-item';
+        
         const title = document.createElement('div');
         title.className = 'result-item-title';
         title.textContent = `${entry.card.name} (${entry.isReversed ? 'Перевернутая' : 'Прямая'})`;
@@ -1115,6 +1141,7 @@ function renderResults() {
         text.className = 'result-item-text';
         const interp = entry.isReversed ? entry.card.interpretation.reversed : entry.card.interpretation.upright;
         text.textContent = interp;
+        
         item.appendChild(title);
         item.appendChild(text);
         resultsList.appendChild(item);

@@ -23,14 +23,8 @@
     </header>
 
     <main class="tarot-content">
-        <!-- Кнопка сброса -->
-        <div class="reset-section">
-            <button id="resetButton" class="reset-button">Сбросить</button>
-        </div>
-        
         <!-- Трехкарточный расклад -->
         <section class="three-card-spread">
-            <h2>Расклад трёх карт</h2>
             <div class="spread-cards">
                 <div class="spread-card" id="pastCard">
                     <div class="card-placeholder" id="card1"></div>
@@ -47,38 +41,41 @@
             </div>
         </section>
 
-        <!-- Колода карт -->
-        <section class="tarot-deck">
-            <div class="deck-header">
-                <div class="deck-selection">
-                    <span id="majorArcanaLabel" class="deck-label active">Верхний Аркан</span>
-                    <span id="minorArcanaLabel" class="deck-label">Младший Аркан</span>
-                </div>
-            </div>
-            <div class="deck-grid" id="deckGrid">
-                <!-- Карты будут добавлены динамически -->
-            </div>
-        </section>
-
         <!-- Результаты расклада -->
         <section class="results" id="resultsSection" style="display:none;">
             <h3>Результаты расклада</h3>
             <div id="resultsList"></div>
         </section>
+    </main>
 
-        <!-- Модальное окно для интерпретации -->
-        <div id="interpretationModal" class="modal">
+    <!-- Колода карт -->
+    <section class="tarot-deck">
+        <div class="deck-header">
+            <div class="deck-selection">
+                <span id="majorArcanaLabel" class="deck-label active">Верхний Аркан</span>
+                <span id="minorArcanaLabel" class="deck-label">Младший Аркан</span>
+            </div>
+            <button id="resetButton" class="reset-button">Сбросить</button>
+        </div>
+        <div class="deck-grid" id="deckGrid">
+            <!-- Карты будут добавлены динамически -->
+        </div>
+    </section>
+
+        <!-- Модальное окно: Изображение карты -->
+        <div id="imageModal" class="modal image">
             <div class="modal-content">
-                <h3 id="modalTitle"></h3>
                 <div class="card-image-container">
-                    <div id="modalCardImage" class="card-image">
-                        <div class="card-content">
-                            <div class="card-name"></div>
-                            <div class="card-type"></div>
-                        </div>
-                    </div>
+                    <div id="modalCardImage"></div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно: Интерпретация -->
+        <div id="interpretationModal" class="modal interpretation">
+            <div class="modal-content">
                 <div class="interpretation">
+                    <div id="modalTitle" class="modal-title"></div>
                     <p id="modalInterpretation"></p>
                 </div>
             </div>

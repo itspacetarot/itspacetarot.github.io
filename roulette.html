@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Roulette - Азартная игра</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a class="logo" href="index.html">
+                    <img src="icon.png" alt="IT Space Tarot" width="24" height="24" />
+                    <span class="logo-text">IT Space</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="tarot.html" class="nav-link">IT Tarot</a>
+                <a href="roulette.html" class="nav-link active">IT Roulette</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="roulette-content">
+        <!-- Настройка игры -->
+        <section class="game-setup" id="gameSetup">
+            <h2>Настройка игры</h2>
+            <div class="setup-form">
+                <div class="form-group">
+                    <label for="playerCount">Количество игроков (1-30):</label>
+                    <input type="number" id="playerCount" min="1" max="30" value="3">
+                </div>
+                <div class="form-group">
+                    <label for="startingChips">Начальное количество фишек (кратное 10):</label>
+                    <input type="number" id="startingChips" min="10" step="10" value="100">
+                </div>
+                <button id="startGameBtn" class="cta-button">Начать игру</button>
+            </div>
+        </section>
+
+        <!-- Игровое поле -->
+        <section class="game-board" id="gameBoard" style="display:none;">
+            <div class="game-header">
+                <div class="game-info">
+                    <span class="info-item">Ход: <strong id="currentRound">1</strong></span>
+                    <span class="info-item">Игроков: <strong id="playersLeft">0</strong></span>
+                </div>
+                <button id="endGameBtn" class="reset-button">Завершить игру</button>
+            </div>
+
+            <div class="roulette-container">
+                <!-- Рулетка -->
+                <div class="roulette-wheel-container">
+                    <canvas id="rouletteWheel" width="300" height="300"></canvas>
+                    <div class="pointer"></div>
+                </div>
+
+                <!-- Стол для ставок -->
+                <div class="betting-table">
+                    <div class="table-layout">
+                        <!-- Зеленое зеро -->
+                        <div class="bet-cell zero" data-number="0">0</div>
+                        
+                        <!-- Числа 1-36 -->
+                        <div class="numbers-grid">
+                            <!-- Генерируется JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="bet-controls">
+                        <div class="chip-selector">
+                            <span>Выберите ставку:</span>
+                            <button class="chip-btn active" data-value="5">5</button>
+                            <button class="chip-btn" data-value="10">10</button>
+                            <button class="chip-btn" data-value="25">25</button>
+                            <button class="chip-btn" data-value="50">50</button>
+                            <button class="chip-btn" data-value="100">100</button>
+                        </div>
+                        <div class="current-bet-info">
+                            <span>Текущая ставка: <strong id="currentBetAmount">5</strong></span>
+                            <span>Ваши фишки: <strong id="playerChips">0</strong></span>
+                        </div>
+                        <button id="spinButton" class="cta-button" disabled>Крутить рулетку</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Список игроков и рейтинг -->
+            <div class="players-section">
+                <h3>Игроки</h3>
+                <div class="players-list" id="playersList"></div>
+                
+                <h3>Рейтинг</h3>
+                <div class="leaderboard" id="leaderboard"></div>
+            </div>
+
+            <!-- История -->
+            <div class="history-section">
+                <h3>История спинов</h3>
+                <div class="history-list" id="historyList"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно результатов спина -->
+    <div id="spinResultModal" class="modal spin-result">
+        <div class="modal-content">
+            <h3 id="spinResultTitle">Результат спина</h3>
+            <div class="result-number" id="resultNumber"></div>
+            <div class="result-color" id="resultColor"></div>
+            <div class="winners-lossers" id="winnersLosers"></div>
+            <button id="closeModalBtn" class="cta-button">Продолжить</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно конца игры -->
+    <div id="gameOverModal" class="modal game-over">
+        <div class="modal-content">
+            <h3>Игра окончена!</h3>
+            <div id="finalWinner"></div>
+            <div class="final-leaderboard" id="finalLeaderboard"></div>
+            <button id="newGameBtn" class="cta-button">Новая игра</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">
+                © 2025 IT Space Tarot. Все права защищены.
+            </p>
+            <p class="tagline">Азартная IT рулетка</p>
+        </div>
+    </footer>
+
+    <script src="roulette.js"></script>
+</body>
+</html>

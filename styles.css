@@ -1165,3 +1165,276 @@ footer {
         gap: 1rem;
     }
 }
+
+/* Стили для обновленной рулетки */
+.roulette-main-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.roulette-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    min-width: 350px;
+}
+
+.roulette-wheel-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.roulette-wheel-container canvas {
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(96, 165, 250, 0.4);
+}
+
+.ball-pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #cccccc);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 20;
+}
+
+.spin-btn {
+    min-width: 200px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.betting-section {
+    flex: 1;
+}
+
+.betting-table {
+    max-width: none;
+    width: 100%;
+}
+
+.american-table-layout {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.zero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bet-cell.zero {
+    width: 60px;
+    height: 50px;
+    background-color: #00aa00;
+}
+
+.bet-cell.zero.double-zero {
+    background-color: #008800;
+}
+
+.numbers-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.numbers-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.bet-cell.number {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #4A5568;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.bet-cell.number.red {
+    background-color: #cc0000;
+}
+
+.bet-cell.number.black {
+    background-color: #1a1a1a;
+}
+
+.bet-cell.number:hover {
+    transform: scale(1.1);
+    border-color: #60A5FA;
+}
+
+.bet-cell.number.has-bet {
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.6);
+    border-color: #60A5FA;
+}
+
+.two-to-one-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.bet-cell.outside {
+    background-color: #2D313A;
+    border: 2px solid #4A5568;
+    color: #B0B8C1;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+.bet-cell.outside.dozen {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bet-cell.outside.even-chance {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bet-cell.outside.red {
+    background-color: #880000;
+    color: #ffffff;
+}
+
+.bet-cell.outside.black {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.bet-cell.outside:hover {
+    border-color: #60A5FA;
+    background-color: #3A3F4A;
+}
+
+.bet-cell.outside.has-bet {
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.6);
+    border-color: #60A5FA;
+}
+
+.dozens-section {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.even-chance-section {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.player-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.player-item:hover {
+    background-color: #2D313A;
+}
+
+.player-item.selected {
+    border: 2px solid #60A5FA;
+    background-color: #2D313A;
+}
+
+.winning-ranges {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.winning-ranges h4 {
+    margin-bottom: 0.5rem;
+    color: #4ade80;
+}
+
+.wl-section .range-tag {
+    display: inline-block;
+    background-color: #3A3F4A;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin: 0.25rem;
+    color: #B0B8C1;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность для обновленной рулетки */
+@media (max-width: 1024px) {
+    .roulette-main-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .roulette-section {
+        min-width: auto;
+    }
+    
+    .betting-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .roulette-wheel-container {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .roulette-section {
+        min-width: auto;
+    }
+    
+    .numbers-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .bet-cell.number {
+        width: 40px;
+        height: 40px;
+        font-size: 0.85rem;
+    }
+    
+    .zero-section .bet-cell.zero {
+        width: 50px;
+        height: 40px;
+    }
+    
+    .dozens-section,
+    .even-chance-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .bet-cell.outside {
+        flex: 1 0 40%;
+        min-width: 80px;
+    }
+}

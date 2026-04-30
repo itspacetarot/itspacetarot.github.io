@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Roulette - Азартная игра</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a class="logo" href="index.html">
+                    <img src="icon.png" alt="IT Space Tarot" width="24" height="24" />
+                    <span class="logo-text">IT Space</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="tarot.html" class="nav-link">IT Tarot</a>
+                <a href="roulette.html" class="nav-link active">IT Roulette</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="roulette-content">
+        <!-- Настройка игры -->
+        <section class="game-setup" id="gameSetup">
+            <h2>Настройка игры</h2>
+            <div class="setup-form">
+                <div class="form-group">
+                    <label for="playerCount">Количество игроков (1-30):</label>
+                    <input type="number" id="playerCount" min="1" max="30" value="3">
+                </div>
+                <div class="form-group">
+                    <label for="startingChips">Начальное количество фишек (кратное 10):</label>
+                    <input type="number" id="startingChips" min="10" step="10" value="100">
+                </div>
+                <button id="startGameBtn" class="cta-button">Начать игру</button>
+            </div>
+        </section>
+
+        <!-- Игровое поле -->
+        <section class="game-board" id="gameBoard" style="display:none;">
+            <div class="game-header">
+                <div class="game-info">
+                    <span class="info-item">Ход: <strong id="currentRound">1</strong></span>
+                    <span class="info-item">Игроков: <strong id="playersLeft">0</strong></span>
+                </div>
+                <button id="endGameBtn" class="reset-button">Завершить игру</button>
+            </div>
+
+            <div class="roulette-main-layout">
+                <!-- Левая часть: Рулетка и кнопка -->
+                <div class="roulette-section">
+                    <div class="roulette-wheel-container">
+                        <canvas id="rouletteWheel" width="350" height="350"></canvas>
+                        <div class="ball-pointer" id="ballPointer"></div>
+                    </div>
+                    <button id="spinButton" class="cta-button spin-btn" disabled>Крутить рулетку</button>
+                </div>
+
+                <!-- Правая часть: Стол для ставок -->
+                <div class="betting-section">
+                    <div class="betting-table">
+                        <!-- Американский стол: 0 и 00 слева, затем числа -->
+                        <div class="american-table-layout">
+                            <!-- Зеро и двойное зеро -->
+                            <div class="zero-section">
+                                <div class="bet-cell zero" data-bet-type="number" data-value="0">0</div>
+                                <div class="bet-cell zero double-zero" data-bet-type="number" data-value="00">00</div>
+                            </div>
+                            
+                            <!-- Числа 1-36 (3 ряда по 12 чисел) -->
+                            <div class="numbers-section">
+                                <div class="numbers-row" id="row3"></div>
+                                <div class="numbers-row" id="row2"></div>
+                                <div class="numbers-row" id="row1"></div>
+                                
+                                <!-- 2 to 1 справа от каждого ряда -->
+                                <div class="two-to-one-section">
+                                    <div class="bet-cell outside" data-bet-type="2to1" data-row="3">2 к 1</div>
+                                    <div class="bet-cell outside" data-bet-type="2to1" data-row="2">2 к 1</div>
+                                    <div class="bet-cell outside" data-bet-type="2to1" data-row="1">2 к 1</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Диапазоны 12 -->
+                        <div class="dozens-section">
+                            <div class="bet-cell outside dozen" data-bet-type="dozen" data-value="1">1st 12</div>
+                            <div class="bet-cell outside dozen" data-bet-type="dozen" data-value="2">2nd 12</div>
+                            <div class="bet-cell outside dozen" data-bet-type="dozen" data-value="3">3rd 12</div>
+                        </div>
+                        
+                        <!-- Нижние диапазоны -->
+                        <div class="even-chance-section">
+                            <div class="bet-cell outside even-chance" data-bet-type="evenchance" data-value="1-18">1-18</div>
+                            <div class="bet-cell outside even-chance red" data-bet-type="evenchance" data-value="RED">RED</div>
+                            <div class="bet-cell outside even-chance black" data-bet-type="evenchance" data-value="BLACK">BLACK</div>
+                            <div class="bet-cell outside even-chance" data-bet-type="evenchance" data-value="19-36">19-36</div>
+                        </div>
+                        
+                        <!-- Выбор фишек и информация -->
+                        <div class="bet-controls">
+                            <div class="chip-selector">
+                                <span>Фишка:</span>
+                                <button class="chip-btn active" data-value="5">5</button>
+                                <button class="chip-btn" data-value="10">10</button>
+                                <button class="chip-btn" data-value="25">25</button>
+                                <button class="chip-btn" data-value="50">50</button>
+                                <button class="chip-btn" data-value="100">100</button>
+                            </div>
+                            <div class="current-bet-info">
+                                <span>Ставка: <strong id="currentBetAmount">5</strong></span>
+                                <span>Игрок: <strong id="activePlayerName">-</strong></span>
+                                <span>Фишки: <strong id="playerChips">0</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Список игроков -->
+            <div class="players-section">
+                <h3>Игроки (кликните для выбора)</h3>
+                <div class="players-list" id="playersList"></div>
+                
+                <h3>Рейтинг</h3>
+                <div class="leaderboard" id="leaderboard"></div>
+            </div>
+
+            <!-- История -->
+            <div class="history-section">
+                <h3>История спинов</h3>
+                <div class="history-list" id="historyList"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно результатов спина -->
+    <div id="spinResultModal" class="modal spin-result">
+        <div class="modal-content">
+            <h3 id="spinResultTitle">Результат спина</h3>
+            <div class="result-number" id="resultNumber"></div>
+            <div class="result-color" id="resultColor"></div>
+            <div class="winning-ranges" id="winningRanges"></div>
+            <div class="winners-lossers" id="winnersLosers"></div>
+            <button id="closeModalBtn" class="cta-button">Продолжить</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно конца игры -->
+    <div id="gameOverModal" class="modal game-over">
+        <div class="modal-content">
+            <h3>Игра окончена!</h3>
+            <div id="finalWinner"></div>
+            <div class="final-leaderboard" id="finalLeaderboard"></div>
+            <button id="newGameBtn" class="cta-button">Новая игра</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">
+                © 2025 IT Space Tarot. Все права защищены.
+            </p>
+            <p class="tagline">Азартная IT рулетка</p>
+        </div>
+    </footer>
+
+    <script src="roulette.js"></script>
+</body>
+</html>
